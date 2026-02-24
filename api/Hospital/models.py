@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Patient(models.Model):
-    name = models.CharField(max_length = 30)
+    full_name = models.CharField(max_length = 30)
     email = models.EmailField(unique = True)
     address = models.CharField(max_length = 30)
     phone_number = models.CharField(max_length = 15)
