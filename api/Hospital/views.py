@@ -9,10 +9,10 @@ from rest_framework import filters
 class PatientView(viewsets.ModelViewSet):
     queryset = Patient.objects.all()
     serializer_class  = PatientSerializer
-    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['phone', 'created_at']
-    search_fields = ['name', 'phone']
-    ordering_fields = ['created_at', 'name']
+    #filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    #filterset_fields = ['phone_number', 'created_at']
+    #search_fields = ['full_name', 'phone_number']
+    #ordering_fields = ['created_at', 'full_name']
 
 
 class DoctorView(viewsets.ModelViewSet):
